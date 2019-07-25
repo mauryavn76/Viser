@@ -1,0 +1,16 @@
+pipeline{
+agent any 
+
+stages{
+stage('Cloning Git')
+steps{
+git'write here git repo address'
+}
+}
+stage('Mail'){
+steps{
+mail bcc: '', body: 'hello ', cc: '', from: '', replyTo: '', subject: 'testing git', to: 'vinay@visertechnosys.com'
+}
+}
+}
+}
