@@ -4,12 +4,12 @@ agent any
 stages{
 stage('Cloning Git')
 steps{
-git'write here git repo address'
+git'https://github.com/mauryavn76/Viser.git'
 }
 }
 stage('Mail'){
 steps{
-mail bcc: '', body: 'hello ', cc: '', from: '', replyTo: '', subject: 'testing git', to: 'vinay@visertechnosys.com'
+mail bcc: '', body: 'jenkins job', cc: '', from: '', replyTo: '', subject: 'email notification', to: 'Vinay@visertechnosys.com'
 }
 }
 }
